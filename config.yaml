@@ -1,0 +1,7 @@
+name: <appname>
+version: 1
+cron:
+- description: like
+  url: /like
+  timezone: Beijing
+  schedule: "*/3 * * * *"
