@@ -7,8 +7,10 @@
 ##搭建方法：
 1. 在SAE新建一个应用，**初始化KVDB**。
 2. 编辑源代码index.wsgi，修改女神微博ID和授权码。
+>
 	微博ID获取方法：打开女神的任意一条微博的如:http://weibo.com/1649913047/B3FVInUPr , 这里边的数字就是微博ID。
-    授权码获取方法：打开https://api.weibo.com/2/oauth2/authorize?client_id=82966982&response_type=token&display=js&redirect_uri=https://api.weibo.com/oauth2/default.html ，授权后出现一个空白页面，不要关闭，按 Ctrl+U 查看源代码，找到"access_token":"2.00tlp******"。嗯，授权码就找到了。
+    授权码获取方法：打开https://api.weibo.com/2/oauth2/authorize?client_id=82966982&response_type=token&display=js&redirect_uri=https://api.weibo.com/oauth2/default.html ，授权后出现一个空白页面，不要关闭，按 Ctrl+U 查看源代码，找到"access_token":"2.00tlp********"。嗯，授权码就找到了。
+    
 3. 编辑config.yaml，加入下边的代码：
 ```
     cron:
