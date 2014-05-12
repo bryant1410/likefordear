@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 #!/usr/bin/env python
+#version:0.2
+#auther:ccbikai
 import os
 import sys
 import sae

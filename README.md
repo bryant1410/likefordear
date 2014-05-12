@@ -4,6 +4,8 @@
 
 部署在SAE，一个Python 脚本。
 
+全自动点赞版本：https://github.com/ccbikai/likefordear/releases/tag/v0.1
+
 ##搭建方法：
 1. 在SAE新建一个应用，**初始化KVDB**。
 2. 编辑源代码index.wsgi，修改女神微博ID和授权码等。
