@@ -83,8 +83,8 @@ class Setlike:
             pass
         else:
             return 'secert is wrong or id is null'
-        url = 'https://api.weibo.cn/2/like/set_like.json?source={0}&access_token={1}&id={2}'.format(APPKEY,ACCESS_TOKEN,weiboid)
-        urllib2.urlopen(url,timeout=60) 
+        data = "Accept-Encoding=gzip,deflate&attitude=smile&access_token={0}&id={1}".format(ACCESS_TOKEN,weiboid)
+        r = urllib2.urlopen('https://api.weibo.com/2/attitudes/create.json',data=data,timeout=60) 
         return 'liked'
     
 app = web.application(urls, globals()).wsgifunc() 
